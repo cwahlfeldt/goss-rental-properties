@@ -1,0 +1,214 @@
+/*
+// This is the main scss file, all imports go here //
+*/
+
+// Import sweet font
+@import 'https://fonts.googleapis.com/css?family=Montserrat';
+@import 'https://fonts.googleapis.com/css?family=Karla';
+@import 'https://fonts.googleapis.com/css?family=Playfair+Display';
+
+// import color override variables
+@import './variables.scss';
+
+// import misc overrides
+@import  './misc-override.scss';
+
+// import entire bootstap
+@import '../../bower_components/bootstrap-sass/assets/stylesheets/_bootstrap.scss';
+
+// queries here
+@media (max-width: 475px) {
+  img.pull-right {
+    padding: 0 0 10px !important;
+  }
+
+  img.pull-left {
+    padding: 0 0 10px !important;
+  }
+
+  .content p {
+    font-size: 16px !important;
+  }
+
+  .about-location {
+    .jumbotron {
+      padding-bottom: 25px !important;
+    }
+  }
+
+  .brand-logo {
+    height: 350px !important;
+  }
+
+  .brand-logo h1 {
+    font-size: 3.5em !important;
+  }
+
+  .brand-logo.brand-alt {
+    height: 100px !important;
+  }
+}
+
+@media (min-width: 1200px) {
+  .container {
+      width: 1100px;
+  }
+}
+
+::selection {
+  background: #bf2e1e; /* WebKit/Blink Browsers */
+}
+::-moz-selection {
+  background: #bf2e1e; /* Gecko Browsers */
+}
+
+// main overwrites go here
+html, body {
+  height: 90%;
+}
+
+body {
+  margin-top: 50px;
+  background-color: #1E1E20;
+  font-family: 'Montserrat', sans-serif !important;
+  color: #2A2C2B;
+}
+
+img.pull-right {
+  padding: 10px 0px 10px 10px;
+}
+
+img.pull-left {
+  padding: 10px 10px 10px 0px;
+}
+
+.thumb {
+  //width: 100%;
+  padding-bottom: 20px;
+}
+
+.thumb img {
+  width: 100%;
+}
+
+.navbar-brand {
+  //font-family: 'Karla', sans-serif !important;
+}
+.navbar-header img {
+  width: 23px;
+  float: left;
+  margin-right: 10px;
+  margin-top: -5px;
+}
+
+.navbar-default {
+  border-color: transparent;
+}
+
+.main-container {
+  background-color: #EEEEEE;
+}
+
+.brand-logo {
+  width: 100%;
+  height: 600px;
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-image: url('../assets/images/logo.jpg');
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.brand-logo.brand-alt {
+  height: 200px;
+}
+
+.brand-logo h1 {
+  font-size: 6em;
+  color: #EEE;
+  background-color: rgba(0, 0, 0, 0.65);
+  padding: 10px;
+  //font-family: 'Playfair Display', sans-serif !important;
+}
+
+li.selected-nav {
+    border-bottom: solid #EEE 2px;
+    margin-bottom: -2px;
+    padding-bottom: 0px;
+}
+
+.about-location {
+  .jumbotron {
+    padding: 0 0;
+    /* min-height: 500px; */
+  }
+}
+
+a.btn {
+  color: #2A2C2B;
+}
+
+.jumbotron p {
+  font-size: 19px;
+}
+
+.jumbotron h2 {
+  margin-bottom: 20px;
+}
+
+.jumbotron.jumbotron-primary {
+  color: #eee;
+}
+
+.jumbotron-primary p {
+  line-height: 30px;
+}
+
+.jumbotron-primary {
+  background-color: #1E1E20;
+}
+
+.jumbotron.jumbotron-secondary {
+  background-color: #EEEEEE;
+  color: #2A2C2B;
+  margin-bottom: 70px;
+}
+
+.jumbotron.jumbotron-footer {
+  margin-bottom: 0;
+  background-color: #1E1E20;
+}
+
+.page-header {
+  border-bottom: 1px solid #2A2C2B;
+}
+
+.footer hr {
+  border-top: 1px solid #EEEEEE;
+}
+
+.about-col {
+  padding: 51px 10px;
+}
+
+.testimonial {
+  padding-bottom: 15px;
+
+  p {
+    margin-bottom: 5px;
+  }
+}
+
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #EEEEEE;
+}
+
+.fa-chevron-down {
+  font-size: 135px;
+}
+
+.contact .jumbotron {
+  margin-bottom: 0;
+}

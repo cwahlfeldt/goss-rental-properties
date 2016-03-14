@@ -1,0 +1,13 @@
+{
+  "name": "goss-rental-properties",
+  "version": "1.0.0",
+  "description": "Rental property website",
+  "main": "index.js",
+  "scripts": {
+    "build": "node-sass --output-style compressed ./assets/scss/main.scss ./dist/main.css",
+    "watch": "watch 'npm run build' ./assets/",
+    "bw": "npm run build && npm run watch & serve"
+  },
+  "author": "",
+  "license": "ISC"
+}

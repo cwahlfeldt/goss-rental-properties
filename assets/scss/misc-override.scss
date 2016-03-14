@@ -1,0 +1,18 @@
+// Misc overrides to the bootstrap framework
+$jumbotron-padding: 20px;
+.nav-tabs-justified>.active>a, .nav-tabs.nav-justified>.active>a, .nav-tabs-justified>.active>a:hover, .nav-tabs.nav-justified>.active>a:hover, .nav-tabs-justified>.active>a:focus, .nav-tabs.nav-justified>.active>a:focus {
+  border-bottom-color: #EEEEEE !important;
+}
+.content .nav-tabs>li.active>a, .content .nav-tabs>li.active>a:hover, .content .nav-tabs>li.active>a:focus {
+    color: #555;
+    background-color: #EEEEEE;
+    border: 1px solid #ddd;
+    border-bottom-color: transparent;
+    cursor: default;
+}
+.content .nav a {
+  color: #1E1E20 !important;
+}
+.content .nav a:hover {
+  color: #bf2e1e !important;
+}
